@@ -1,6 +1,10 @@
+# Ignore warnings around version mismatch that doesn't affect results
+import warnings
+
+warnings.filterwarnings("ignore", category=UserWarning)
+
 import argparse
 import os.path
-
 import geopandas as gpd
 import shapely
 import numpy as np
