@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "convert-shp-to-csv"
-version = "0.1.1"
+version = "0.1.2"
 description = "Converts shape files (.shp) to a gridded csv file"
 authors = ["Brandon Rose <brandon@jataware.com>", "Matthew Printz <matt@jataware.com>"]
 license = "MIT"
