@@ -71,12 +71,7 @@ Converts a shape file (.shp) to a gridded csv file.
     gdf = gpd.sjoin(
         gridded,
         shp,
-        how="left",
-        predicate="intersects",
-        lsuffix="gridded_",
-        rsuffix="shp_",
     )
-    gdf = gdf.dropna()
 
     # Convert the grid location to latitude and longitude
     gdf["latitude"] = gdf.centroid.apply(lambda x: x.y)
